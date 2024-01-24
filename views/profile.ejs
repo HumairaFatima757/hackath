@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+    <title>Document</title>
+</head>
+<body>
+    <link href='//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'/>  
+<div class="profile-card">
+  <div class="top-section">
+
+    <div class="pic">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.TXOfBmM1u_8FbnSH-bn8cQHaJJ&pid=Api&rs=1&c=1&qlt=95&w=88&h=108" alt="profile picture">
+    </div>
+    <div class="name">
+     <%= user.username%>
+    </div>
+    <div class="name id">
+      phoneNumber:
+      <%= user.phoneNumber%>
+    </div>
+    <div class="name id">
+      course:
+      <%= user.course%>
+    </div>
+    
+</div>
+  <div class="bottom-section">
+    <div class="tag course">email: <%= user.email%> </div> <br> <br>
+    
+    <div class="social-media">
+      <a href="/checkin" class="button">check in</a>
+      <a href="/logout" class="button">check out</a>
+
+      
+    </div>
+   
+  </div>
+</div>
+</body>
+</html>
